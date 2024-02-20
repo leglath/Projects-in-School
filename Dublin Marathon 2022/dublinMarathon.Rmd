@@ -1,5 +1,5 @@
 ---
-title: "ST661 Project - Dublin Marathon "
+title: "Dublin Marathon "
 author: ""
 date: "`r Sys.Date()`"
 output: 
