@@ -1,4 +1,4 @@
-ST661 Project - Dublin Marathon
+Dublin Marathon
 ================
 2024-02-19
 
