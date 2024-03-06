@@ -95,9 +95,9 @@ marathon_data <- marathon_data |>
   mutate(SecondHalfSec = FinalInSec - MidInSec) 
 
 ggplot(marathon_data, 
-       aes(x=MidInSec, y=SecondHalfSec)) + 
-  geom_point() +
-  geom_smooth()+
+       aes(x=MidInSec, y=SecondHalfSec, colour = Gender)) + 
+  geom_jitter() +
+  geom_smooth() +
   scale_x_continuous(limits = c(4000, 15000)) + 
   scale_y_continuous(limits = c(4000, 18000)) + 
   xlab("Seconds for First Half of Race") + 
@@ -121,7 +121,9 @@ pval<-t.test(marathon_data$MidInSec, marathon_data$SecondHalfSec,
 While the performances in first half and second half race are
 significantly different and correlated, an athlete’s second half
 performance tends to be worse than their first half (their difference
-tends to be positive on average).
+tends to be positive on average). Also the difference on performance 
+between genders expands for lower-tiered atheletes, and female ones 
+tend to perform better than male ones. 
 
 #### 2. Visualising relationship between Club Affiliation and Overall Time
 
