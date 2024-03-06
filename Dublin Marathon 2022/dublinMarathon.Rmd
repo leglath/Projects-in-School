@@ -98,7 +98,7 @@ pval<-t.test(marathon_data$MidInSec, marathon_data$SecondHalfSec,
           paired = T)$p.value
 ```
 
-While the performances in first half and second half race are significantly different and correlated, an athlete's second half performance tends to be worse than their first half (their difference tends to be positive on average).
+While the performances in first half and second half race are significantly different and correlated, an athlete's second half performance tends to be worse than their first half (their difference tends to be positive on average). Also the difference on performance between genders expands for lower-tiered atheletes, and female ones tend to perform better than male ones.
 
 #### 2. Visualising relationship between Club Affiliation and Overall Time
 
