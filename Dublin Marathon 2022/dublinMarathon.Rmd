@@ -86,9 +86,9 @@ marathon_data <- marathon_data |>
   mutate(SecondHalfSec = FinalInSec - MidInSec) 
 
 ggplot(marathon_data, 
-       aes(x=MidInSec, y=SecondHalfSec)) + 
-  geom_point() +
-  geom_smooth()+
+       aes(x=MidInSec, y=SecondHalfSec, colour = Gender)) + 
+  geom_jitter() +
+  geom_smooth() +
   scale_x_continuous(limits = c(4000, 15000)) + 
   scale_y_continuous(limits = c(4000, 18000)) + 
   xlab("Seconds for First Half of Race") + 
