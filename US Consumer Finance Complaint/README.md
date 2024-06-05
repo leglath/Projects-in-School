@@ -1,0 +1,3 @@
+# US Consumer Finance Complaint
+
+Which product is most likely to have a monetary relief? Which model could predict the probability of monetary relief best? Because the database was large, we had to limit our predictors in Product (The type of product the consumer identified in the complaint) and Issue (The issue the consumer identified in the complain), both categorical in this case. We used a logistic regression and set the threshold 0.1, because the positive case has a significantly imbalanced proportion. 
